@@ -13,7 +13,7 @@ public class Order {
     private Date moment;
     private OrderStatus status;
     private Client client;
-    private List<OrderItem> items = new ArrayList<>();
+    private List<OrderItem> items = new ArrayList<OrderItem>();
 
     public Order(Date moment, OrderStatus status, Client client) {
         this.moment = moment;
@@ -43,10 +43,6 @@ public class Order {
 
     public void setClient(Client client) {
         this.client = client;
-    }
-
-    public List<OrderItem> getItems() {
-        return items;
     }
 
     public void addItems(OrderItem item) {
